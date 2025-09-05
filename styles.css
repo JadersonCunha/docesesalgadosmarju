@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Delius+Unicase:wght@400;700&family=Ewert&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:wght@401&family=Rubik+Dirt&display=swap');
 
 :root {
     --color-pink: #a62a7a;
@@ -32,21 +33,21 @@ body {
 .header-nav {
     background-color: var(--color-dark-brown);
     padding-top: 15px; 
-    padding-bottom: 0; 
+    padding-bottom: 100px; 
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden; 
-    position: relative; /* Adicionado para posicionamento da onda */
+    position: relative;
 }
 
 .wave-header-bottom {
     position: absolute;
-    bottom: -1px; /* Ajuste fino para a onda se encaixar */
+    bottom: -1px;
     left: 0;
     width: 100%;
-    height: 100px; /* Altura da onda */
+    height: 100px;
     overflow: hidden;
     z-index: 0; 
 }
@@ -57,13 +58,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* Removido o transform: rotate(0deg); para a onda ficar para baixo */
 }
 
 .wave-header-bottom path {
     fill: var(--color-beige); 
 }
-
 
 .nav-content {
     display: flex;
@@ -75,8 +74,9 @@ body {
 }
 
 .nav-logo {
-    max-width: 150px;
+    max-width: 170px;
     height: auto;
+    padding: 35px 0px;  
 }
 
 .main-nav ul {
@@ -86,6 +86,7 @@ body {
 }
 
 .main-nav ul li a {
+    font-family: "Delius Unicase", cursive;
     color: var(--color-white);
     text-decoration: none;
     font-weight: 500;
@@ -111,7 +112,7 @@ body {
     z-index: 1;
     border-radius: 5px;
     padding: 10px 0;
-    top: calc(100% + 10px);
+    top: 100%;
 }
 
 .dropdown-content a {
@@ -174,9 +175,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    background-color: var(--color-dark-orange);
+    overflow: hidden; 
+    background-size: cover;
+    opacity: 0.9;
+    z-index: 2;
 }
+    
+
 
 .hero-overlay {
     position: absolute;
@@ -200,6 +205,7 @@ body {
 .hero-image {
     position: relative;
     z-index: 3;
+    
 }
 
 .hero-image .featured-cake {
@@ -287,6 +293,10 @@ body {
 
 .about-section {
     background-color: var(--color-white);
+}
+
+.content-image{
+    width: 280px;
 }
 
 .content-grid {
@@ -411,7 +421,6 @@ body {
     fill: var(--color-dark-brown); 
 }
 
-
 .contact-section h2 {
     color: var(--color-pink); 
 }
@@ -515,7 +524,6 @@ body {
     }
 
     .dropdown-content {
-        position: static;
         box-shadow: none;
         background-color: transparent;
         border-radius: 0;
