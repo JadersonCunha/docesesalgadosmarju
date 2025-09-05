@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarJu Doces e Salgados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header-nav">
+        <div class="container nav-content">
+            <div class="logo-container">
+                <img src="logo.jpeg" alt="Logo MarJu Doces e Salgados" class="nav-logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">A MarJu</a></li>
+                    <li class="dropdown">
+                        <a href="#doces">Doces <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Clássicos</a>
+                            <a href="#">Tortas</a>
+                            <a href="#">Bolos</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#salgados">Salgados <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Fritos</a>
+                            <a href="#">Assados</a>
+                            <a href="#">Mini Lanches</a>
+                        </div>
+                    </li>
+                    <li><a href="#contato">Outros</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#produtos" class="btn-primary">Nossos produtos <i class="fas fa-chevron-right"></i></a>
+                <button class="icon-button"><i class="fas fa-search"></i></button>
+                <button class="icon-button"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+        </div>
+        <div class="wave-header-bottom">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path fill="#f4eee7" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,53.3C384,53,480,75,576,74.7C672,75,768,53,864,42.7C960,32,1056,32,1152,32C1248,32,1344,32,1392,32L1440,32L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <div class="hero-image">
+                    <img src="cake-example.jpeg" alt="Bolo de chocolate com morangos" class="featured-cake">
+                </div>
+                <div class="hero-text">
+                    <span class="tagline">Tradição, sabor e qualidade!</span>
+                    <h1>MARJU DOCES E SALGADOS</h1>
+                    <p>Aqui na MarJu, nos preocupamos em oferecer a você a melhor experiência gastronômica. Cuidamos de cada detalhe para que você tenha o prazer de saborear uma sobremesa diferenciada. Conheça nossos diferenciais!</p>
+                    <div class="hero-buttons">
+                        <a href="#sobre" class="btn-secondary">Mais sobre a Confeitaria <i class="fas fa-chevron-right"></i></a>
+                        <a href="#contato" class="btn-tertiary">Faça sua encomenda <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section-content about-section">
+            <div class="container">
+                <h2>Quem Somos</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <p>A MarJu Doces e Salgados nasceu da paixão por culinária e do desejo de levar o sabor de uma comida caseira para a sua mesa. Utilizamos ingredientes frescos e selecionados para criar delícias que encantam o paladar e aquecem o coração. De festas de aniversário a eventos corporativos, temos a opção perfeita para cada ocasião.</p>
+                        <p>Nossa missão é transformar momentos especiais em memórias inesquecíveis, com doces e salgados que agradam a todos os gostos.</p>
+                        <a href="#contato" class="btn-tertiary">Fale Conosco <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <div class="content-image">
+                        <img src="about-us.jpeg" alt="Equipe MarJu preparando doces" class="responsive-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="section-content products-section">
+            <div class="container">
+                <h2>Nossos Produtos em Destaque</h2>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="doce1.jpeg" alt="Brigadeiros gourmet">
+                        <h3>Doces Finos</h3>
+                        <p>Perfeitos para qualquer celebração.</p>
+                        <a href="#" class="btn-small">Ver mais</a>
+                    </article>
+                    <article class="product-card">
+                        <img src="salgado1.jpeg" alt="Mini coxinhas">
+                        <h3>Salgados Variados</h3>
+                        <p>O melhor sabor para sua festa.</p>
+                        <a href="#" class="btn-small">Ver mais</a>
+                    </article>
+                    <article class="product-card">
+                        <img src="bolo1.jpeg" alt="Bolo de aniversário decorado">
+                        <h3>Bolos Personalizados</h3>
+                        <p>Do seu jeito, para seu momento.</p>
+                        <a href="#" class="btn-small">Ver mais</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section-content contact-section">
+            <div class="wave-contact-bottom">
+                <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                    <path fill="#362626" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,53.3C384,53,480,75,576,74.7C672,75,768,53,864,42.7C960,32,1056,32,1152,32C1248,32,1344,32,1392,32L1440,32L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
+                </svg>
+            </div>
+            <div class="container contact-content">
+                <h2>Faça Sua Encomenda</h2>
+                <p>Entre em contato conosco para solicitar um orçamento ou fazer seu pedido. Estamos ansiosos para adoçar seu dia!</p>
+                <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Enviar Mensagem
+                </a>
+                <p class="phone-number">Ou ligue para: (99) 99999-9999</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 MarJu Doces e Salgados. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
